@@ -1,5 +1,6 @@
 name: Update
 on:
+  workflow_dispatch:
   schedule:
   - cron: 0 0 * * 3
 jobs:
@@ -8,9 +9,40 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
+      - name: Fetch deps
+        run: yarn install --non-interactive
+      - name: Update lit to latest version
         run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          yarn upgrade --latest --exact lit
+          #yarn upgrade --latest @lit/localize
+          #yarn upgrade --latest @lit-labs/motion
+          #yarn upgrade --latest @lit-labs/react
+          #yarn upgrade --latest @lit-labs/ssr-client
+          #yarn upgrade --latest @lit-labs/task
+      - name: Update package version
+        run: |
+          VERSION=`jq -r ".dependencies.lit" package.json`
+          jq ".version=\"$VERSION\"" package.json > out.json
+          mv -f out.json package.json
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+      - name: Check if there's a new version
+        run: |
+          CHANGED=`git diff-index --exit-code HEAD | wc -l`
+          echo "CHANGED=${#CHANGED}" >> $GITHUB_ENV
+          echo "Changed status: ${CHANGED}"
+      - name: Build
+        if: ${{ env.CHANGED != 0 }}
+        run: |
+          yarn exec -- rollup -c
+      - name: Push changes
+        if: ${{ env.CHANGED != 0 }}
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Version bump to ${{ env.VERSION }}"
+          tagging_message: "${{ env.VERSION }}"
+          add_options: "--update"
+      - name: Publish new NPM
+        if: ${{ env.CHANGED != 0 }}
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
