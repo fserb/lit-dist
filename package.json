@@ -1,7 +1,7 @@
 {
   "name": "lit-dist",
   "license": "BSD-3-Clause",
-  "version": "2.0",
+  "version": "2.0.0-rc.2",
   "description": "Static built Lit",
   "author": "Fernando Serboncini",
   "repository": {
@@ -21,7 +21,7 @@
     "@lit-labs/ssr-client": "^1.0.0-rc.1",
     "@lit-labs/task": "^1.0.0-rc.1",
     "@lit/localize": "^0.10.2",
-    "lit": "2.0.0-pre.1"
+    "lit": "2.0.0-rc.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
