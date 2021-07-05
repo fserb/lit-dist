@@ -46,6 +46,7 @@ function build({input, output, format, target}) {
     output: {
       inlineDynamicImports: true,
       format: format,
+      name: 'lit',
       sourcemap: false,
       file: 'dist/' + output,
     }
@@ -73,10 +74,10 @@ for (const inputType of ["lit", "all"]) {
       outputTarget = '.fullcompat';
     }
 
-    for (const format of ['es', 'cjs']) {
+    for (const format of ['es', 'iife']) {
       let outputFormat = '';
-      if (format === 'cjs') {
-        outputFormat = '.cjs';
+      if (format === 'iife') {
+        outputFormat = '.iife';
       }
       const output = `${outputType}${outputTarget}${outputFormat}.js`;
       out.push(build({input, format, target, output}));
