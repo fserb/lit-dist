@@ -10,20 +10,20 @@ import lit from "https://unpkg.com/lit-dist/dist/lit.js";
 
 ## Available versions
 
-| Filename                    | Module type | Extras | Browser compatibility     |
-| --------------------------- |:-----------:|:------:|:------------------------- |
-| `lit.js`                    | esm         | no     | Latest JS features        |
-| `lit.cjs.js`                | cjs         | no     | Latest JS features        |
-| `lit.compat.js`             | esm         | no     | Modern browsers           |
-| `lit.compat.cjs.js`         | cjs         | no     | Modern browsers           |
-| `lit.fullcompat.js`         | esm         | no     | 92% browser compatibility |
-| `lit.fullcompat.cjs.js`     | cjs         | no     | 92% browser compatibility |
-| `lit.all.js`                | esm         | yes    | Latest JS features        |
-| `lit.all.cjs.js`            | cjs         | yes    | Latest JS features        |
-| `lit.all.compat.js`         | esm         | yes    | Modern browsers           |
-| `lit.all.compat.cjs.js`     | cjs         | yes    | Modern browsers           |
-| `lit.all.fullcompat.js`     | esm         | yes    | 92% browser compatibility |
-| `lit.all.fullcompat.cjs.js` | cjs         | yes    | 92% browser compatibility |
+| Filename                     | Module type | Extras | Browser compatibility     | Size |
+| ---------------------------  |:-----------:|:------:|:------------------------- | ----:|
+| `lit.js`                     | esm         | no     | Latest JS features        |  15K |
+| `lit.iife.js`                | iife        | no     | Latest JS features        |  15K |
+| `lit.compat.js`              | esm         | no     | Modern browsers           |  29K |
+| `lit.compat.iife.js`         | iife        | no     | Modern browsers           |  29K |
+| `lit.fullcompat.js`          | esm         | no     | 92% browser compatibility |  76K |
+| `lit.fullcompat.iife.js`     | iife        | no     | 92% browser compatibility |  76K |
+| `lit.all.js`                 | esm         | yes    | Latest JS features        |  31K |
+| `lit.all.iife.js`            | iife        | yes    | Latest JS features        |  31K |
+| `lit.all.compat.js`          | esm         | yes    | Modern browsers           |  45K |
+| `lit.all.compat.iife.js`     | iife        | yes    | Modern browsers           |  45K |
+| `lit.all.fullcompat.js`      | esm         | yes    | 92% browser compatibility | 100K |
+| `lit.all.fullcompat.iife.js` | iife        | yes    | 92% browser compatibility | 100K |
 
 ## Extras
 
