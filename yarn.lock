@@ -896,10 +896,10 @@
   dependencies:
     "@lit/reactive-element" "^1.0.0-rc.2"
 
-"@lit/localize@^0.10.2":
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/@lit/localize/-/localize-0.10.2.tgz#733b053712b91444d069a4efb373d24f22924709"
-  integrity sha512-nPawNYlsINELCramHbrC/Yaua/Q2Y6i+Nc3ohQbVPCGFa2KGXc56EpxyDSngu+nI6Iczp4yeYc4xSfsO2ylyxw==
+"@lit/localize@^0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@lit/localize/-/localize-0.10.3.tgz#d9d5713708d8ecb1c679d2f4f14d4985d7bf12b9"
+  integrity sha512-ZOADfmRBw3CoE40tD02opeMJv/7v4Rnxy/NFNW3O1O6zkVKQOf1lupcApfKa10mb6M9h14xO5/JB7DqdOoU5zg==
   dependencies:
     "@lit/reactive-element" "^1.0.0-rc.1"
     lit "^2.0.0-rc.1"
