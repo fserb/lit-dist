@@ -1,7 +1,7 @@
 {
   "name": "lit-dist",
   "license": "BSD-3-Clause",
-  "version": "2.0.0-rc.3",
+  "version": "2.0.0-rc.4",
   "description": "Static built Lit",
   "author": "Fernando Serboncini",
   "repository": {
@@ -16,12 +16,12 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "@lit-labs/motion": "^1.0.0-rc.3",
-    "@lit-labs/react": "^1.0.0-rc.3",
-    "@lit-labs/ssr-client": "^1.0.0-rc.2",
-    "@lit-labs/task": "^1.0.0-rc.3",
+    "@lit-labs/motion": "^1.0.0-rc.4",
+    "@lit-labs/react": "^1.0.0-rc.4",
+    "@lit-labs/ssr-client": "^1.0.0-rc.3",
+    "@lit-labs/task": "^1.0.0-rc.4",
     "@lit/localize": "^0.10.3",
-    "lit": "2.0.0-rc.3"
+    "lit": "2.0.0-rc.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
