@@ -875,10 +875,10 @@
   dependencies:
     lit "^2.0.0"
 
-"@lit-labs/react@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@lit-labs/react/-/react-1.0.5.tgz#9116365791d1c4401648acd68a2150dce69312a7"
-  integrity sha512-GSbzzsIalrBOC11pC+KwQwvgvmVZpXfKo7k3BoGSqLf3jXD3GI2xIvIxTaMGp3OLDqG5F43jOMCPdsh0Nq97dg==
+"@lit-labs/react@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@lit-labs/react/-/react-1.0.6.tgz#4cd861cfac92c3f2e0ab78921d4d0e223949665a"
+  integrity sha512-uDtfJv5XunmsydTNRST+MU8U6QyETCw8BKoeMw2Q4Te1r5paAD9sVJfxESP7Dbk0G4tqCRS0BsyNmYJSGCrJyQ==
 
 "@lit-labs/ssr-client@^1.0.1":
   version "1.0.1"
@@ -1319,10 +1319,10 @@ lit-html@^2.2.0:
   dependencies:
     "@types/trusted-types" "^2.0.2"
 
-lit@2.2.6:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/lit/-/lit-2.2.6.tgz#4ef223e88517c000b0c01baf2e3535e61a75a5b5"
-  integrity sha512-K2vkeGABfSJSfkhqHy86ujchJs3NR9nW1bEEiV+bXDkbiQ60Tv5GUausYN2mXigZn8lC1qXuc46ArQRKYmumZw==
+lit@2.2.7:
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/lit/-/lit-2.2.7.tgz#a563e8851db1f131912f510129dcc9a42324e838"
+  integrity sha512-WXYujlKFwme5ZqXOZoWuRVZQAwy7scbcVT3wCbAOHefOxyscqjywWGlF2e6nnC9E64yP9l2ZQlN8wZcRlrjUMQ==
   dependencies:
     "@lit/reactive-element" "^1.3.0"
     lit-element "^3.2.0"
