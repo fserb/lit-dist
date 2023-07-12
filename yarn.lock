@@ -875,10 +875,10 @@
   dependencies:
     lit "^2.0.0"
 
-"@lit-labs/react@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@lit-labs/react/-/react-1.2.0.tgz#06a7917b0dbbab48921932cdb5f8181162e4aa4b"
-  integrity sha512-AIfHLsy4Uk0MSxZTVLrtmdkGnAgCOoAvBCAvTdOXsqp60Vb4zZTUpc0C3CJQ6e8FjM6JL0avOFFBo3XcfARq2Q==
+"@lit-labs/react@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@lit-labs/react/-/react-1.2.1.tgz#5b421502cdf68a3639dec431318eeed2285f1c0e"
+  integrity sha512-DiZdJYFU0tBbdQkfwwRSwYyI/mcWkg3sWesKRsHUd4G+NekTmmeq9fzsurvcKTNVa0comNljwtg4Hvi1ds3V+A==
 
 "@lit-labs/ssr-client@^1.1.2":
   version "1.1.2"
@@ -899,10 +899,10 @@
   resolved "https://registry.yarnpkg.com/@lit-labs/ssr-dom-shim/-/ssr-dom-shim-1.1.0.tgz#3361d6b8c4cb2ac426d5794ac7cd9776cd2f0814"
   integrity sha512-92uQ5ARf7UXYrzaFcAX3T2rTvaS9Z1//ukV+DqjACM4c8s0ZBQd7ayJU5Dh2AFLD/Ayuyz4uMmxQec8q3U4Ong==
 
-"@lit-labs/task@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@lit-labs/task/-/task-2.1.1.tgz#37e994737d83e514d09d94342febe8c58402a9bb"
-  integrity sha512-gvnsp99+VuFJWnVQxs13ahMM9skR7GmQGnrzX1VRzpdjuRDOD8Ytfl5EvGQX8bmvPS2pmWgQTs8kgmv27oBMUQ==
+"@lit-labs/task@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@lit-labs/task/-/task-2.1.2.tgz#e7e44998edd1441f0d4f2101abe504da6e1f7c8e"
+  integrity sha512-pDjPYojmCXnOezT/4BgqxHA2kahmSsCE0y6uPCYyVqigIx9DJav05s0KAtD9IImTY3LvWu5isSlq6nkWagAybA==
   dependencies:
     "@lit/reactive-element" "^1.1.0"
 
@@ -1371,10 +1371,10 @@ lit-html@^2.7.1:
   dependencies:
     "@types/trusted-types" "^2.0.2"
 
-lit@2.7.5:
-  version "2.7.5"
-  resolved "https://registry.yarnpkg.com/lit/-/lit-2.7.5.tgz#60bc82990cfad169d42cd786999356dcf79b035f"
-  integrity sha512-i/cH7Ye6nBDUASMnfwcictBnsTN91+aBjXoTHF2xARghXScKxpD4F4WYI+VLXg9lqbMinDfvoI7VnZXjyHgdfQ==
+lit@2.7.6:
+  version "2.7.6"
+  resolved "https://registry.yarnpkg.com/lit/-/lit-2.7.6.tgz#810007b876ed43e0c70124de91831921598b1665"
+  integrity sha512-1amFHA7t4VaaDe+vdQejSVBklwtH9svGoG6/dZi9JhxtJBBlqY5D1RV7iLUYY0trCqQc4NfhYYZilZiVHt7Hxg==
   dependencies:
     "@lit/reactive-element" "^1.6.0"
     lit-element "^3.3.0"
